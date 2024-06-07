@@ -559,13 +559,13 @@ class _TransformableBoxState extends State<TransformableBox> {
         clipBehavior: Clip.none,
         fit: StackFit.expand,
         children: [
-          Positioned(
+         /* Positioned(
             left: widget.handleAlignment.offset(widget.handleTapSize),
             top: widget.handleAlignment.offset(widget.handleTapSize),
             width: rect.width,
             height: rect.height,
             child: content,
-          ),
+          ),*/
           if (widget.resizable)
             for (final handle in HandlePosition.corners.where((handle) =>
                 widget.visibleHandles.contains(handle) ||
